@@ -1,0 +1,183 @@
+fieldset {
+  border: 0;
+  margin-bottom: 2rem;
+}
+
+label:not(.description) {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+}
+
+form {
+  max-width: 70vw;
+}
+
+label.description {
+  font-size: clamp(1.6rem, 2.5vw, 1.8rem);
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #380b61;
+}
+
+.title {
+  text-align: center;
+  color: #380b61;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin-top: 3rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+  color: #380b61;
+  margin-top: 1.5rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 4rem;
+}
+
+.fieldset-name-surname {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+input:not(input[type="checkbox"], input[type="radio"]),
+select,
+textarea {
+  padding: 1rem;
+  border: 1px solid #ae6eeb;
+  transition: 0.2s ease;
+  font-weight: 500;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+input:not(input[type="checkbox"], input[type="radio"]) {
+  width: clamp(15vw, 30vw, 30vw);
+}
+
+.email {
+  flex: 1;
+  margin-bottom: 3rem;
+}
+
+input#email {
+  width: auto;
+}
+
+input:focus,
+section:focus,
+textarea:focus {
+  border: 1px solid #641ea5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+textarea {
+  padding: 1rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  color: #111;
+}
+
+textarea {
+  height: 30rem;
+  resize: none;
+}
+
+.developsFor div div {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.developsFor div div label {
+  margin-left: 1rem;
+}
+
+.seniorityLevel {
+  margin-bottom: 3rem;
+}
+
+.seniorityLevel label {
+  margin-bottom: 3rem;
+}
+
+.technologies div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.technologies div div {
+  display: flex;
+  align-items: center;
+}
+
+.technologies label.description {
+  margin-bottom: 3rem;
+}
+
+.technologies {
+  margin-bottom: 2rem;
+}
+
+.technologies div div:first-child {
+  margin-left: 0;
+}
+
+.technologies div div:last-child {
+  margin-right: 0;
+}
+
+.technologies div div input {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.about label {
+  margin-bottom: 3rem;
+}
+
+textarea::-webkit-scrollbar {
+  width: 5px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: #641ea5;
+  border-radius: 5rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 4rem;
+
+  border: 0;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.2s ease;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: #fff;
+  background: #642a9b;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  padding: clamp(1rem, 2.5vw, 2rem);
+  margin-bottom: 3rem;
+}
+
+button:hover {
+  filter: brightness(1.5);
+}
