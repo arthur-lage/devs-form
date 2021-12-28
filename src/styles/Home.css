@@ -48,6 +48,14 @@ main {
   margin-bottom: 3rem;
 }
 
+.fieldset-name-surname .name {
+  margin-right: 2rem;
+}
+
+.fieldset-name-surname .surname {
+  margin-left: 2rem;
+}
+
 input:not(input[type="checkbox"], input[type="radio"]),
 select,
 textarea {
@@ -72,8 +80,8 @@ input#email {
   width: auto;
 }
 
-input:focus,
-section:focus,
+input:not(input[type="checkbox"], input[type="radio"]):focus,
+select:focus,
 textarea:focus {
   border: 1px solid #641ea5;
 }
