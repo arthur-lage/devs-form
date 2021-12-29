@@ -10,26 +10,30 @@
   </head>
   <body>
     <div class="home">
-      <div>
-        <h1 class="title">Dev Registration</h1>
-        <p class="subtitle">Fill the input fields with your information</p>
+      <div class="link-to-see-all">
+        <a href="./see-all.html">See registered devs</a>
       </div>
 
+      <header>
+        <h1 class="title">Dev Registration</h1>
+        <p class="subtitle">Fill the input fields with your information</p>
+      </header>
+
       <main>
-        <form onSubmit="{handleForm}">
+        <form method="POST">
           <fieldset class="fieldset-name-surname">
             <section class="name">
-              <label class="description" htmlFor="name"> Name </label>
+              <label class="description" for="name"> Name </label>
               <input required type="text" name="name" id="name" />
             </section>
             <section class="surname">
-              <label class="description" htmlFor="surname"> Surname </label>
+              <label class="description" for="surname"> Surname </label>
               <input required type="text" name="surname" id="surname" />
             </section>
           </fieldset>
 
           <section class="email">
-            <label class="description" htmlFor="email"> Email </label>
+            <label class="description" for="email"> Email </label>
             <input required type="email" name="email" id="email" />
           </section>
 
@@ -42,12 +46,12 @@
                 <div>
                   <input
                     type="radio"
-                    defaultChecked
+                    checked
                     name="developsFor"
                     id="frontend"
                     value="frontend"
                   />
-                  <label htmlFor="frontend">Frontend</label>
+                  <label for="frontend">Frontend</label>
                 </div>
 
                 <div>
@@ -57,7 +61,7 @@
                     id="backend"
                     value="backend"
                   />
-                  <label htmlFor="backend">Backend</label>
+                  <label for="backend">Backend</label>
                 </div>
 
                 <div>
@@ -67,7 +71,7 @@
                     id="fullstack"
                     value="fullstack"
                   />
-                  <label htmlFor="fullstack">Fullstack</label>
+                  <label for="fullstack">Fullstack</label>
                 </div>
               </div>
             </section>
@@ -97,7 +101,7 @@
                     id="html"
                     value="html"
                   />
-                  <label htmlFor="html">HTML</label>
+                  <label for="html">HTML</label>
                 </div>
 
                 <div>
@@ -108,7 +112,7 @@
                     id="css"
                     value="css"
                   />
-                  <label htmlFor="css">CSS</label>
+                  <label for="css">CSS</label>
                 </div>
 
                 <div>
@@ -119,7 +123,7 @@
                     id="javascript"
                     value="javascript"
                   />
-                  <label htmlFor="javascript">JavaScript</label>
+                  <label for="javascript">JavaScript</label>
                 </div>
 
                 <div>
@@ -130,7 +134,7 @@
                     id="java"
                     value="java"
                   />
-                  <label htmlFor="java">Java</label>
+                  <label for="java">Java</label>
                 </div>
 
                 <div>
@@ -141,7 +145,7 @@
                     id="csharp"
                     value="csharp"
                   />
-                  <label htmlFor="csharp">C#</label>
+                  <label for="csharp">C#</label>
                 </div>
 
                 <div>
@@ -152,7 +156,7 @@
                     id="cplusplus"
                     value="cplusplus"
                   />
-                  <label htmlFor="cplusplus">C++</label>
+                  <label for="cplusplus">C++</label>
                 </div>
 
                 <div>
@@ -163,7 +167,7 @@
                     id="go"
                     value="go"
                   />
-                  <label htmlFor="go">Go</label>
+                  <label for="go">Go</label>
                 </div>
 
                 <div>
@@ -174,7 +178,7 @@
                     id="python"
                     value="python"
                   />
-                  <label htmlFor="python">Python</label>
+                  <label for="python">Python</label>
                 </div>
 
                 <div>
@@ -185,7 +189,7 @@
                     id="nodejs"
                     value="nodejs"
                   />
-                  <label htmlFor="nodejs">NodeJS</label>
+                  <label for="nodejs">NodeJS</label>
                 </div>
 
                 <div>
@@ -196,7 +200,7 @@
                     id="php"
                     value="php"
                   />
-                  <label htmlFor="php">PHP</label>
+                  <label for="php">PHP</label>
                 </div>
 
                 <div>
@@ -207,20 +211,22 @@
                     id="ruby"
                     value="ruby"
                   />
-                  <label htmlFor="ruby">Ruby</label>
+                  <label for="ruby">Ruby</label>
                 </div>
               </div>
             </section>
           </fieldset>
 
           <section class="about">
-            <label class="description" htmlFor="about">
+            <label class="description" for="about">
               Tell us a little about your experience:
             </label>
             <textarea required name="about" id="about"></textarea>
           </section>
 
-          <button type="submit">Submit</button>
+          <button id="submit" type="submit">Submit</button>
+
+          <span id="spanZZZ"></span>
         </form>
       </main>
     </div>

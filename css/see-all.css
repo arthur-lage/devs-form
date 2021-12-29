@@ -1,0 +1,69 @@
+.title {
+  text-align: center;
+  color: #380b61;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  margin-top: 7.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: clamp(1.4rem, 2.5vw, 2.4rem);
+  color: #380b61;
+  margin-top: 1.5rem;
+}
+
+main {
+  margin-top: 5rem;
+
+  display: flex;
+  justify-content: center;
+
+  padding: 0 2rem;
+}
+
+table {
+  display: block;
+  border-collapse: collapse;
+  max-width: 80vw;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+td, th {
+  text-align: left;
+  font-weight: 700;
+  padding: 8px;
+  border: 1px solid #380b61;
+}
+
+tr {
+  font-size: clamp(1rem, 1vw, 1.8rem);
+}
+
+td {
+  font-weight: 500;
+}
+
+.link-to-register {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.link-to-register a {
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  text-decoration: none;
+  color: #380b61;
+}
+
+.link-to-register a:hover{
+    text-decoration: underline;
+}
+
+#loading {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+}
+
+#no-devs {
+  font-size: clamp(1.4rem, 2.5vw, 3rem);
+}
