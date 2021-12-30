@@ -205,3 +205,45 @@ button:hover {
 .link-to-see-all a:hover {
   text-decoration: underline;
 }
+
+#error {
+  border: 1px solid #ff325f;
+  border-radius: 4px;
+  color: rgb(102, 6, 6);
+  background: rgba(255, 50, 94, 0.4);
+  text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 3rem;
+  width: max-content;
+  transition: .2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#error.visible{
+  visibility: visible;
+  opacity: 1;
+  padding: 3rem;
+  margin: 3rem auto;
+}
+
+#success {
+  border: 1px solid #155a1b;
+  border-radius: 4px;
+  color: rgb(14, 75, 12);
+  background: rgba(61, 204, 48, 0.4);
+  text-align: center;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  line-height: 3rem;
+  width: max-content;
+  transition: .2s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#success.visible{
+  visibility: visible;
+  opacity: 1;
+  margin: 3rem auto;
+  padding: 3rem;
+}
