@@ -11,20 +11,20 @@ Developers are stored in a MongoDB database, and the backend is made with Expres
 # 🌆 GIFs and images
 
 ## GIF
-<img src="./src/assets/gif.gif" />
+<img src="./assets/gif.gif" />
 
 # Desktop Screenshots
 
 <div>
-    <img src="./src/assets/screenshot-1.png" />
-    <img src="./src/assets/screenshot-2.png" />
+    <img src="./assets/screenshot-1.png" />
+    <img src="./assets/screenshot-2.png" />
 </div>
 
 # Mobile Screenshots
 
 <div>
-    <img src="./src/assets/screenshot-3.png"/>
-    <img src="./src/assets/screenshot-4.png" />
+    <img src="./assets/screenshot-3.png"/>
+    <img src="./assets/screenshot-4.png" />
 </div>
 
 # 👨‍💻👩‍💻 Use the app
