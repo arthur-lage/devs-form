@@ -33,6 +33,10 @@ You can access the application by clicking on the link below:
 
 [Access Devs Form](https://devs-form-al.vercel.app)
 
+# 🔗 Link for the server side of the project
+
+[Devs Form Server Repository](https://github.com/arthur-lage/devs-form-server)
+
 # 💻 Technologies used in this project
 
 ## Client
