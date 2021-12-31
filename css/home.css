@@ -247,3 +247,25 @@ button:hover {
   margin: 3rem auto;
   padding: 3rem;
 }
+
+@media screen and (max-width: 768px) {
+  .fieldset-name-surname {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fieldset-name-surname .name {
+    margin-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .fieldset-name-surname .surname {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  input:not(input[type="checkbox"], input[type="radio"]) {
+    width: 100%;
+  }
+}

@@ -1,5 +1,8 @@
 const mainContent = document.querySelector("main")
 
+let page = 1
+let rows = 5
+
 window.addEventListener("load", async () => {
   let hasLoaded = false
 
@@ -11,7 +14,21 @@ window.addEventListener("load", async () => {
   hasLoaded = true
 
   if(usersArray.length > 0 && hasLoaded) {
-    mainContent.innerHTML = 
+    let start = (page - 1) * rows
+    let end = start + rows
+    
+    const slicedArray = usersArray.slice(start, end)
+    
+    buildTable(slicedArray)
+    addPagination(usersArray)
+    activateButton(1)
+  } else { 
+    mainContent.innerHTML = `<p id='no-devs'>There are no registered devs yet!</p>`
+  } 
+})
+
+function buildTable(usersArray) {
+  mainContent.innerHTML = 
     `
       <table id="users-table">
       <thead>
@@ -53,7 +70,48 @@ window.addEventListener("load", async () => {
       newCellSeniorityLevel.appendChild(seniorityLevelTxt)
       newCellTechnologies.appendChild(technologiesTxt)
     })
-  } else { 
-    mainContent.innerHTML = `<p id='no-devs'>There are no registered devs yet!</p>`
-  } 
-})
+}
+
+function addPagination(usersArray) {
+  const paginationWrapper = document.querySelector("#paginationWrapper")
+  paginationNum = Math.ceil(usersArray.length / rows)
+
+  for(let i = 1; i < paginationNum + 1; i++) {
+    const button = document.createElement("button")
+    button.classList.add("paginationButton")
+    button.id = i
+    button.innerHTML = i
+
+    paginationWrapper.append(button)
+  }
+
+  document.querySelectorAll(".paginationButton").forEach(btn => {
+    btn.addEventListener("click", () => {
+      deactivateButtons()
+      activateButton(btn.id)
+
+      page = btn.id
+
+      let start = (page - 1) * rows
+      let end = start + rows
+      
+      const slicedArray = usersArray.slice(start, end)
+      
+      buildTable(slicedArray)
+    })
+  })
+}
+
+function deactivateButtons () {
+  document.querySelectorAll(".paginationButton").forEach(btn => {
+    btn.classList.remove("active")
+  })
+}
+
+function activateButton (id) {
+  document.querySelectorAll(".paginationButton").forEach(btn => {
+    if(btn.id == id) {
+      btn.classList.add("active")
+    }
+  })
+}
